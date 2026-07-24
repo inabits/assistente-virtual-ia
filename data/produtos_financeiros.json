@@ -3,40 +3,53 @@
     "nome": "Tesouro Selic",
     "categoria": "renda_fixa",
     "risco": "baixo",
-    "rentabilidade": "100% da Selic",
-    "aporte_minimo": 30.00,
-    "indicado_para": "Reserva de emergência e iniciantes"
+    "rentabilidade": "Selic + 0,097% a.a. (taxa indicativa de compra)",
+    "taxa_base_referencia": "Selic meta em 15,00% a.a. (18/03/2026)",
+    "aporte_minimo": 185.33,
+    "indicado_para": "Reserva de emergência e iniciantes",
+    "referencia_data": "2026-03-18",
+    "fonte": "Tesouro Direto e Banco Central do Brasil"
   },
   {
     "nome": "CDB Liquidez Diária",
     "categoria": "renda_fixa",
     "risco": "baixo",
-    "rentabilidade": "102% do CDI",
+    "rentabilidade": "Faixa de 100% a 110% do CDI (varia por banco e prazo)",
+    "taxa_base_referencia": "CDI em linha com a Selic, referencia diaria do BCB",
     "aporte_minimo": 100.00,
-    "indicado_para": "Quem busca segurança com rendimento diário"
+    "indicado_para": "Quem busca segurança com rendimento diário",
+    "referencia_data": "2026-03-18",
+    "fonte": "Banco Central do Brasil e praticas de mercado"
   },
   {
     "nome": "LCI/LCA",
     "categoria": "renda_fixa",
     "risco": "baixo",
-    "rentabilidade": "95% do CDI",
+    "rentabilidade": "Faixa de 88% a 97% do CDI (isento de IR para pessoa fisica)",
+    "taxa_base_referencia": "CDI em linha com a Selic, referencia diaria do BCB",
     "aporte_minimo": 1000.00,
-    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
+    "indicado_para": "Quem pode esperar prazo de carencia e busca eficiencia tributaria",
+    "referencia_data": "2026-03-18",
+    "fonte": "Banco Central do Brasil e praticas de mercado"
   },
   {
-    "nome": "Fundo Multimercado",
+    "nome": "Fundo Imobiliário (FII)",
     "categoria": "fundo",
     "risco": "medio",
-    "rentabilidade": "CDI + 2%",
-    "aporte_minimo": 500.00,
-    "indicado_para": "Perfil moderado que busca diversificação"
+    "rentabilidade": "Dividend Yield (DY) observado em muitos fundos entre 9% e 13% a.a., com variacao de cota",
+    "aporte_minimo": 100.00,
+    "indicado_para": "Perfil moderado que busca diversificacao e renda mensal, aceitando oscilacao",
+    "referencia_data": "2026-03-18",
+    "fonte": "Mercado secundario de FIIs na B3"
   },
   {
     "nome": "Fundo de Ações",
     "categoria": "fundo",
     "risco": "alto",
-    "rentabilidade": "Variável",
+    "rentabilidade": "Variavel; pode superar ou ficar abaixo do CDI conforme ciclo e estrategia",
     "aporte_minimo": 100.00,
-    "indicado_para": "Perfil arrojado com foco no longo prazo"
+    "indicado_para": "Perfil arrojado com foco no longo prazo",
+    "referencia_data": "2026-03-18",
+    "fonte": "Mercado de capitais brasileiro"
   }
 ]
