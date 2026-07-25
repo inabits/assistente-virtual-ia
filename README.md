@@ -1,117 +1,51 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🤖 Lia - Aliada Financeira
 
-## Contexto
+## O que é a Lia?
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+A **Lia — Aliada Financeira** é uma mentora de educação financeira baseada em Inteligência Artificial, criada para ajudar principalmente jovens profissionais que estão começando a organizar sua vida financeira.
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+Ela funciona como uma **amiga que entende de finanças**: acompanha os hábitos financeiros do usuário, explica conceitos de forma simples, utiliza exemplos práticos baseados em seus próprios dados e emite alertas preventivos quando identifica comportamentos que podem comprometer seu orçamento.
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+A Lia não tem como objetivo apenas responder dúvidas, mas ajudar o usuário a **entender sua própria realidade financeira** e desenvolver hábitos mais conscientes.
 
 ---
 
-## O Que Você Deve Entregar
+### O que a Lia faz:
 
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
-
----
-
-### 2. Base de Conhecimento
-
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+- Ensina educação financeira de forma simples, clara e acessível.
+- Analisa receitas e despesas para identificar padrões de consumo.
+- Emite alertas preventivos quando identifica possíveis gastos excessivos ou comportamentos fora do padrão.
+- Acompanha metas financeiras, como a construção de uma reserva de emergência.
+- Explica conceitos financeiros utilizando exemplos práticos e situações do dia a dia.
+- Personaliza a experiência utilizando os dados financeiros e o perfil do usuário disponíveis em seu contexto.
+- Mantém a continuidade do atendimento utilizando o histórico de interações anteriores.
+- Orienta de maneira amigável e sem julgamentos, incentivando o usuário a melhorar seus hábitos.
+- Dá "puxões de orelha" quando necessário, alertando o usuário sobre decisões que podem prejudicar sua organização financeira.
+- Incentiva a evolução financeira, reconhecendo pequenas conquistas e progressos.
+- Explica produtos financeiros de forma educativa, apresentando características, riscos, custos, liquidez e diferenças entre alternativas.
 
 ---
 
-### 3. Prompts do Agente
+### O que a Lia NÃO faz:
 
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
+- Não recomenda investimentos específicos ou indica produtos para compra.
+- Não recomenda corretoras, ativos ou percentuais de carteira.
+- Não realiza ordens de compra ou venda.
+- Não toma decisões financeiras pelo usuário.
+- Não substitui um consultor financeiro ou outro profissional especializado.
+- Não inventa informações, valores ou dados financeiros que não estejam disponíveis em seu contexto.
+- Não fornece informações sobre outros usuários ou acessa dados financeiros de terceiros.
+- Não solicita senhas, códigos de segurança ou dados bancários sensíveis.
+- Não promete rentabilidade, lucro ou resultados financeiros.
+- Não utiliza os produtos disponíveis em sua base para realizar recomendações personalizadas de investimento.
+- Não responde a assuntos que estejam fora do seu escopo de educação e organização financeira.
 
 ---
 
 ## Estrutura do Repositório
 
 ```
-📁 lab-agente-financeiro/
+📁 assistente-virtual-ia/
 │
 ├── 📄 README.md
 │
@@ -128,22 +62,51 @@ Todas as ferramentas abaixo possuem versões gratuitas:
 │   ├── 04-metricas.md                # Avaliação e métricas
 │   └── 05-pitch.md                   # Roteiro do pitch
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+└── 📁 src/                           # Código da aplicação
+    └── app.py                        # (exemplo de estrutura)
+
 ```
 
 ---
 
-## Dicas Finais
+## Como executar
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+### 1. Instalar Ollama
+
+```bash
+# 1. Instalar Ollama (ollama.com)
+
+# 2. Baixar um modelo leve
+ollama pull gpt-oss
+
+# 3. Testar se funciona
+ollama run gpt-oss "Olá!"
+```
+
+### 2. Instalar dependências
+
+```bash
+pip install -r ./src/requirements.txt
+```
+
+---
+
+### Rodar a Lia
+
+```bash
+streamlit run ./src/app.py
+```
+
+---
+
+## Documentação completa
+
+Toda a documentacao técnica, base de conhecimento, engenharia de prompts e métricas de avaliação estão na pasta [docs/](docs/).
+
+---
+
+## 👩‍💻 Autora
+
+**Bianca Inazumi**
+
+Projeto desenvolvido para o desafio da **DIO - Digital Innovation One**.
