@@ -29,15 +29,10 @@ Existem duas possibilidades:
 import pandas as pd
 import json
 
-# CSVs
+perfil = json.load(open('./data/perfil_investidor.json'))
 transacoes = pd.read_csv('./data/transacoes.csv')
 historico = pd.read_csv('./data/historico_atendimento.csv')
-
-# JSONs
-with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
-  perfil = json.load(f)
-with open('data/produtos_financeiros.json', 'r', encoding='utf-8') as f:
-  produtos = json.load(f)
+produtos = json.load(open('./data/produtos_financeiros.json'))
 ```
 
 ### Como os dados são usados no prompt?
